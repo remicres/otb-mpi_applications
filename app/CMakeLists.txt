@@ -4,17 +4,17 @@ set(OTBMPIApplications_LINK_LIBS
 )
 
 otb_create_mpi_application(
-  NAME           MPIMultivariateAlterationDetector
+  NAME           MultivariateAlterationDetector
   SOURCES        otbMultivariateAlterationDetector.cxx
   LINK_LIBRARIES ${${otb-module}_LIBRARIES})
 
 otb_create_mpi_application(
-  NAME           MPIHaralickTextureExtraction
+  NAME           HaralickTextureExtraction
   SOURCES        otbHaralickTextureExtraction.cxx
   LINK_LIBRARIES ${${otb-module}_LIBRARIES})
 
 otb_create_mpi_application(
-  NAME           MPISFSTextureExtraction
+  NAME           SFSTextureExtraction
   SOURCES        otbSFSTextureExtraction.cxx
   LINK_LIBRARIES ${${otb-module}_LIBRARIES})
 

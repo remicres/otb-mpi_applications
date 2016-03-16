@@ -25,11 +25,11 @@ namespace otb
 namespace Wrapper
 {
 
-class MPIMultivariateAlterationDetector: public MPIApplication
+class MultivariateAlterationDetector: public MPIApplication
 {
 public:
   /** Standard class typedefs. */
-  typedef MPIMultivariateAlterationDetector          Self;
+  typedef MultivariateAlterationDetector          Self;
   typedef MPIApplication                   Superclass;
   typedef itk::SmartPointer<Self>       Pointer;
   typedef itk::SmartPointer<const Self> ConstPointer;
@@ -37,12 +37,12 @@ public:
   /** Standard macro */
   itkNewMacro(Self);
 
-  itkTypeMacro(MPIMultivariateAlterationDetector, otb::Wrapper::MPIApplication);
+  itkTypeMacro(MultivariateAlterationDetector, MPIApplication);
 
 private:
   void DoInit()
   {
-    SetName("MPIMultivariateAlterationDetector");
+    SetName("MultivariateAlterationDetector");
     SetDescription("Multivariate Alteration Detector");
 
     // Documentation
@@ -138,4 +138,4 @@ private:
 }
 }
 
-OTB_APPLICATION_EXPORT(otb::Wrapper::MPIMultivariateAlterationDetector)
+OTB_MPI_APPLICATION_EXPORT(MultivariateAlterationDetector)

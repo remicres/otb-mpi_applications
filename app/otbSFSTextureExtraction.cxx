@@ -32,11 +32,11 @@ namespace otb
 namespace Wrapper
 {
 
-class MPISFSTextureExtraction : public MPIApplication
+class SFSTextureExtraction : public MPIApplication
 {
 public:
 /** Standard class typedefs. */
-typedef MPISFSTextureExtraction          Self;
+typedef SFSTextureExtraction          Self;
 typedef MPIApplication                   Superclass;
 typedef itk::SmartPointer<Self>       Pointer;
 typedef itk::SmartPointer<const Self> ConstPointer;
@@ -51,7 +51,7 @@ typedef ImageListToVectorImageFilter<ImageListType, FloatVectorImageType>      I
 /** Standard macro */
 itkNewMacro(Self);
 
-itkTypeMacro(MPISFSTextureExtraction, otb::MPIApplication);
+itkTypeMacro(SFSTextureExtraction, otb::MPIApplication);
 
 private:
 
@@ -181,4 +181,4 @@ ImageListToVectorImageFilterType::Pointer m_Concatener;
 }
 }
 
-OTB_APPLICATION_EXPORT(otb::Wrapper::MPISFSTextureExtraction)
+OTB_MPI_APPLICATION_EXPORT(SFSTextureExtraction)

@@ -33,11 +33,11 @@ namespace otb
 namespace Wrapper
 {
 
-class MPIHaralickTextureExtraction : public MPIApplication
+class HaralickTextureExtraction : public MPIApplication
 {
 public:
 /** Standard class typedefs. */
-typedef MPIHaralickTextureExtraction     Self;
+typedef HaralickTextureExtraction     Self;
 typedef MPIApplication                   Superclass;
 typedef itk::SmartPointer<Self>       Pointer;
 typedef itk::SmartPointer<const Self> ConstPointer;
@@ -60,7 +60,7 @@ typedef ImageListToVectorImageFilter<ImageListType, FloatVectorImageType>      I
 /** Standard macro */
 itkNewMacro(Self);
 
-itkTypeMacro(MPIHaralickTextureExtraction, otb::MPIApplication);
+itkTypeMacro(HaralickTextureExtraction, otb::MPIApplication);
 
 private:
 
@@ -289,4 +289,4 @@ ImageListToVectorImageFilterType::Pointer m_HigConcatener;
 }
 }
 
-OTB_APPLICATION_EXPORT(otb::Wrapper::MPIHaralickTextureExtraction)
+OTB_MPI_APPLICATION_EXPORT(HaralickTextureExtraction)
