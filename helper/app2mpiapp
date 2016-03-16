@@ -29,6 +29,9 @@ sed -i -e "s/typedef Application/typedef MPIApplication/g" $2
 sed -i -e "s/otb::Application/otb::MPIApplication/g" $2 
 sed -i -e "s/otb::Wrapper::Application/otb::Wrapper::MPIApplication/g" $2
 sed -i -e "s/otbWrapperApplication.h/otbMPIWrapperApplication.h/g" $2
+sed -i -e "s/OTB_APPLICATION_EXPORT/OTB_MPI_APPLICATION_EXPORT/g" $2
+sed -i -e "s/otb::Wrapper:://g" $2
+
 echo "$2 Successfuly created"
 
 # Check if there is some Cmake files

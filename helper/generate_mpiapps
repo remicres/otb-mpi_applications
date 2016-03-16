@@ -1,5 +1,5 @@
 #!/bin/bash
 chmod +x app2mpiapp
-app2mpiapp /work/otb/OTB/Modules/Applications/AppTextures/app/otbSFSTextureExtraction.cxx app/otbSFSTextureExtraction.cxx
-app2mpiapp /work/otb/OTB/Modules/Applications/AppTextures/app/otbHaralickTextureExtraction.cxx app/otbHaralickTextureExtraction.cxx
-app2mpiapp /work/otb/OTB/Modules/Applications/AppChangeDetection/app/otbMultivariateAlterationDetector.cxx app/otbMultivariateAlterationDetector.cxx
+./app2mpiapp ../../../Applications/AppTextures/app/otbSFSTextureExtraction.cxx ../app/otbSFSTextureExtraction.cxx
+./app2mpiapp ../../../Applications/AppTextures/app/otbHaralickTextureExtraction.cxx ../app/otbHaralickTextureExtraction.cxx
+./app2mpiapp ../../../Applications/AppChangeDetection/app/otbMultivariateAlterationDetector.cxx ../app/otbMultivariateAlterationDetector.cxx
