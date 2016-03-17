@@ -28,7 +28,11 @@ sed -i -e "s/public Application/public MPIApplication/g" $2
 sed -i -e "s/typedef Application/typedef MPIApplication/g" $2 
 sed -i -e "s/otb::Application/otb::MPIApplication/g" $2 
 sed -i -e "s/otb::Wrapper::Application/otb::Wrapper::MPIApplication/g" $2
-sed -i -e "s/otbWrapperApplication.h/otbMPIWrapperApplication.h/g" $2
+if [[ $(grep otbWrapperApplication.h $2) ]];then
+   sed -i -e "s/otbWrapperApplication.h/otbMPIWrapperApplication.h/g" $2
+else
+   sed -i '1s/^/#include \"otbMPIWrapperApplication.h\" /' $2
+fi
 sed -i -e "s/OTB_APPLICATION_EXPORT/OTB_MPI_APPLICATION_EXPORT/g" $2
 sed -i -e "s/otb::Wrapper:://g" $2
 

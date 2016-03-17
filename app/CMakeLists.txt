@@ -18,3 +18,23 @@ otb_create_mpi_application(
   SOURCES        otbSFSTextureExtraction.cxx
   LINK_LIBRARIES ${${otb-module}_LIBRARIES})
 
+otb_create_mpi_application(
+  NAME           GridBasedImageResampling
+  SOURCES        otbGridBasedImageResampling.cxx
+  LINK_LIBRARIES ${${otb-module}_LIBRARIES})
+
+otb_create_mpi_application(
+  NAME           OrthoRectification
+  SOURCES        otbOrthoRectification.cxx
+  LINK_LIBRARIES ${${otb-module}_LIBRARIES})
+
+otb_create_mpi_application(
+  NAME           RigidTransformResample
+  SOURCES        otbRigidTransformResample.cxx
+  LINK_LIBRARIES ${${otb-module}_LIBRARIES})
+
+otb_create_mpi_application(
+  NAME           Superimpose
+  SOURCES        otbSuperimpose.cxx
+  LINK_LIBRARIES ${${otb-module}_LIBRARIES})
+
