@@ -6,6 +6,7 @@ otb_module(OTBMPIApplications
     OTBAppChangeDetection
     OTBAppTextures
     OTBAppProjection
+    OTBAppFusion
 
   TEST_DEPENDS
     OTBTestKernel

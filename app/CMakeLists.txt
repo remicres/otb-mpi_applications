@@ -38,3 +38,13 @@ otb_create_mpi_application(
   SOURCES        otbSuperimpose.cxx
   LINK_LIBRARIES ${${otb-module}_LIBRARIES})
 
+otb_create_mpi_application(
+  NAME           BundleToPerfectSensor
+  SOURCES        otbBundleToPerfectSensor.cxx
+  LINK_LIBRARIES ${${otb-module}_LIBRARIES})
+
+otb_create_mpi_application(
+  NAME           Pansharpening
+  SOURCES        otbPansharpening.cxx
+  LINK_LIBRARIES ${${otb-module}_LIBRARIES})
+
