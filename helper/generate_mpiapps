@@ -1,5 +1,11 @@
 #!/bin/bash
+cd $(dirname $0)
 chmod +x app2mpiapp
 ./app2mpiapp ../../../Applications/AppTextures/app/otbSFSTextureExtraction.cxx ../app/otbSFSTextureExtraction.cxx
 ./app2mpiapp ../../../Applications/AppTextures/app/otbHaralickTextureExtraction.cxx ../app/otbHaralickTextureExtraction.cxx
 ./app2mpiapp ../../../Applications/AppChangeDetection/app/otbMultivariateAlterationDetector.cxx ../app/otbMultivariateAlterationDetector.cxx
+./app2mpiapp ../../../Applications/AppProjection/app/otbGridBasedImageResampling.cxx ../app/otbGridBasedImageResampling.cxx
+./app2mpiapp ../../../Applications/AppProjection/app/otbOrthoRectification.cxx ../app/otbOrthoRectification.cxx
+./app2mpiapp ../../../Applications/AppProjection/app/otbRigidTransformResample.cxx ../app/otbRigidTransformResample.cxx
+./app2mpiapp ../../../Applications/AppProjection/app/otbSuperimpose.cxx ../app/otbSuperimpose.cxx
+
