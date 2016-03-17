@@ -8,4 +8,5 @@ chmod +x app2mpiapp
 ./app2mpiapp ../../../Applications/AppProjection/app/otbOrthoRectification.cxx ../app/otbOrthoRectification.cxx
 ./app2mpiapp ../../../Applications/AppProjection/app/otbRigidTransformResample.cxx ../app/otbRigidTransformResample.cxx
 ./app2mpiapp ../../../Applications/AppProjection/app/otbSuperimpose.cxx ../app/otbSuperimpose.cxx
-
+./app2mpiapp ../../../Applications/AppFusion/app/otbBundleToPerfectSensor.cxx ../app/otbBundleToPerfectSensor.cxx
+./app2mpiapp ../../../Applications/AppFusion/app/otbPansharpening.cxx ../app/otbPansharpening.cxx
