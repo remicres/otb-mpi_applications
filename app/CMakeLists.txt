@@ -48,3 +48,57 @@ otb_create_mpi_application(
   SOURCES        otbPansharpening.cxx
   LINK_LIBRARIES ${${otb-module}_LIBRARIES})
 
+otb_create_mpi_application(
+  NAME           ClassificationMapRegularization
+  SOURCES        otbClassificationMapRegularization.cxx
+  LINK_LIBRARIES ${${otb-module}_LIBRARIES})
+
+otb_create_mpi_application(
+  NAME           PredictRegression
+  SOURCES        otbPredictRegression.cxx
+  LINK_LIBRARIES ${${otb-module}_LIBRARIES})
+
+otb_create_mpi_application(
+  NAME           ImageClassifier
+  SOURCES        otbImageClassifier.cxx
+  LINK_LIBRARIES ${${otb-module}_LIBRARIES})
+
+otb_create_mpi_application(
+  NAME           EdgeExtraction
+  SOURCES        otbEdgeExtraction.cxx
+  LINK_LIBRARIES ${${otb-module}_LIBRARIES})
+
+otb_create_mpi_application(
+  NAME           Despeckle
+  SOURCES        otbDespeckle.cxx
+  LINK_LIBRARIES ${${otb-module}_LIBRARIES})
+
+otb_create_mpi_application(
+  NAME           Smoothing
+  SOURCES        otbSmoothing.cxx
+  LINK_LIBRARIES ${${otb-module}_LIBRARIES})
+
+otb_create_mpi_application(
+  NAME           BandMath
+  SOURCES        otbBandMath.cxx
+  LINK_LIBRARIES ${${otb-module}_LIBRARIES})
+
+otb_create_mpi_application(
+  NAME           BandMathX
+  SOURCES        otbBandMathX.cxx
+  LINK_LIBRARIES ${${otb-module}_LIBRARIES})
+
+otb_create_mpi_application(
+  NAME           LocalStatisticExtraction
+  SOURCES        otbLocalStatisticExtraction.cxx
+  LINK_LIBRARIES ${${otb-module}_LIBRARIES})
+
+otb_create_mpi_application(
+  NAME           BinaryMorphologicalOperation
+  SOURCES        otbBinaryMorphologicalOperation.cxx
+  LINK_LIBRARIES ${${otb-module}_LIBRARIES})
+
+otb_create_mpi_application(
+  NAME           GrayScaleMorphologicalOperation
+  SOURCES        otbGrayScaleMorphologicalOperation.cxx
+  LINK_LIBRARIES ${${otb-module}_LIBRARIES})

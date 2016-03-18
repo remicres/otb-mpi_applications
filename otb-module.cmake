@@ -7,6 +7,13 @@ otb_module(OTBMPIApplications
     OTBAppTextures
     OTBAppProjection
     OTBAppFusion
+    OTBAppClassification
+    OTBAppEdge
+    OTBAppFiltering
+    OTBAppMathParser
+    OTBAppMathParserX
+    OTBAppMoments
+    OTBAppMorphology
 
   TEST_DEPENDS
     OTBTestKernel
