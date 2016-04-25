@@ -23,3 +23,4 @@ chmod +x app2mpiapp
 ./app2mpiapp ../../../Applications/AppMorphology/app/otbGrayScaleMorphologicalOperation.cxx ../app/otbGrayScaleMorphologicalOperation.cxx
 ./app2mpiapp ../../../Applications/AppSegmentation/app/otbMeanShiftSmoothing.cxx ../app/otbMeanShiftSmoothing.cxx
 ./app2mpiapp ../../../Applications/AppImageUtils/app/otbConvert.cxx ../app/otbConvert.cxx
+./app2mpiapp ../../../Applications/AppIndices/app/otbRadiometricIndices.cxx ../app/otbRadiometricIndices.cxx

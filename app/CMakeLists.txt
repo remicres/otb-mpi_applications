@@ -109,7 +109,17 @@ otb_create_mpi_application(
   LINK_LIBRARIES ${${otb-module}_LIBRARIES})
 
 otb_create_mpi_application(
+  NAME           LSMSSegmentation
+  SOURCES        otbLSMSSegmentation.cxx
+  LINK_LIBRARIES ${${otb-module}_LIBRARIES})
+
+otb_create_mpi_application(
   NAME           Convert
   SOURCES        otbConvert.cxx
+  LINK_LIBRARIES ${${otb-module}_LIBRARIES})
+  
+otb_create_mpi_application(
+  NAME           RadiometricIndices
+  SOURCES        otbRadiometricIndices.cxx
   LINK_LIBRARIES ${${otb-module}_LIBRARIES})
   

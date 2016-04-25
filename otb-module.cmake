@@ -16,6 +16,7 @@ otb_module(OTBMPIApplications
     OTBAppMorphology
 	OTBAppSegmentation
 	OTBAppImageUtils
+	OTBAppIndices
 
   TEST_DEPENDS
     OTBTestKernel
