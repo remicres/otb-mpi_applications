@@ -102,3 +102,14 @@ otb_create_mpi_application(
   NAME           GrayScaleMorphologicalOperation
   SOURCES        otbGrayScaleMorphologicalOperation.cxx
   LINK_LIBRARIES ${${otb-module}_LIBRARIES})
+
+otb_create_mpi_application(
+  NAME           MeanShiftSmoothing
+  SOURCES        otbMeanShiftSmoothing.cxx
+  LINK_LIBRARIES ${${otb-module}_LIBRARIES})
+
+otb_create_mpi_application(
+  NAME           Convert
+  SOURCES        otbConvert.cxx
+  LINK_LIBRARIES ${${otb-module}_LIBRARIES})
+  

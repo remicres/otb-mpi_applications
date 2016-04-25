@@ -14,6 +14,8 @@ otb_module(OTBMPIApplications
     OTBAppMathParserX
     OTBAppMoments
     OTBAppMorphology
+	OTBAppSegmentation
+	OTBAppImageUtils
 
   TEST_DEPENDS
     OTBTestKernel
